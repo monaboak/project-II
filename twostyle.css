@@ -4,7 +4,6 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  background: black;
 }
 
 .wrapper {
@@ -13,7 +12,8 @@ body {
 }
 
 header {
-  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/onfireee.jpeg);
   background-repeat: no-repeat;
   height: 100vh;
   -webkit-background-size: cover;
@@ -63,17 +63,13 @@ p {
   background: #fff;
   color: #333;
 }
-footer {
-  background: black;
-  color: black;
-  padding: 20px 20px;
-}
 
 .container-fluid {
   width: 40%;
   margin: 0 auto;
   margin-top: 100px;
-  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/onfireee.jpeg);
 }
 
 .container-fluid h5: {
@@ -83,11 +79,9 @@ footer {
   color: orangered;
   position: relative;
   width: 23rem;
-  background: black;
 }
 
 .container-fluid h2::after {
-  background: black;
   content: "";
   position: absolute;
   bottom: 0;
@@ -95,4 +89,32 @@ footer {
   width: 67px;
   height: 2px;
   background-color: orangered;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid orangered;
+  cursor: pointer;
+  border-radius: 50 px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(images/toggle-bg.png) no-repeat 8px 7px white;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  color: orangered;
 }
