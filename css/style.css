@@ -31,9 +31,9 @@ header {
 .nav-area li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 20px;
+  padding: 5px 10px;
   font-family: poppins;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 .nav-area li a:hover {
@@ -57,6 +57,7 @@ header {
   top: -20;
   left: 0;
 }
+
 .welcome-text {
   position: absolute;
   width: 600px;
