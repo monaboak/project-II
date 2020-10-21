@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Car Culture</title>
     <!--link to style.css-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./threestyle.css" />
   </head>
   <body>
     <header>
@@ -21,13 +21,16 @@
           <li><a href="credits.html">Credits</a></li>
         </ul>
       </div>
-    </header>
-    <!--header section goes here-->
-    <h1>Car Culture</h1>
-    <!--Car Culture-->
-    <section id="Car Culture">
-      <header>
-        <h2>Car Culture</h2>
+      <div class="welcome-text">
+        <!--header section goes here-->
+
+        <h1>Car Culture</h1>
+        <p>
+          Los Angeles differs from other populous cities -like New York, for
+          example- in that it has a huge car culture. This crazed culture comes
+          from the fact that L.A. is a metropolitan area, and the county is
+          about 4,700 miles wide.
+        </p>
         <iframe
           width="560"
           height="315"
@@ -46,7 +49,87 @@
           level of car emission, which then produces a great deal of smog and
           eventually creates a hole in the ozone layer.
         </p>
-      </header>
-    </section>
+      </div>
+    </header>
+    <h2>Frequently Asked Questions (FAQs)</h2>
+
+    <div
+      style="visibility: hidden; position: absolute; width: 0px; height: 0px"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol viewBox="0 0 24 24" id="expand-more">
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="close">
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </symbol>
+      </svg>
+    </div>
+
+    <details open>
+      <summary>
+        Why is smog dangerous?
+        <svg
+          class="control-icon control-icon-expand"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#expand-more"
+          />
+        </svg>
+        <svg
+          class="control-icon control-icon-close"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+        </svg>
+      </summary>
+      <p>
+        Smog is defined as a haze combined with smoke and other pollutants in
+        the atmosphere. Smog is considered to be dangerous because when inhaled,
+        it irritates living organisms’ airways and can increase our risk of
+        serious lung and heart diseases.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        What contributes to the traffic in L.A.?
+        <svg
+          class="control-icon control-icon-expand"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#expand-more"
+          />
+        </svg>
+        <svg
+          class="control-icon control-icon-close"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+        </svg>
+      </summary>
+      <p>
+        Essentially, the main driving force of L.A.’s notorious traffic is poor
+        urban planning. The county’s population density is increasing, and the
+        space remains the same so it’s getting gradually more crowded over a
+        short amount of time.
+      </p>
+    </details>
   </body>
 </html>
