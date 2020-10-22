@@ -27,6 +27,7 @@ header {
 p {
   color: white;
   line-height: 16pt;
+  padding: 15px;
 }
 .welcome-text h1 {
   text-align: top;
@@ -34,6 +35,7 @@ p {
   color: #ffe555;
   text-transform: uppercase;
   font-size: 60px;
+  padding: 20px;
 }
 
 .welcome-text {

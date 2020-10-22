@@ -22,11 +22,13 @@ header {
   background-position: center center;
   background-attachment: fixed;
   position: relative;
+  padding: 30px;
 }
 
 p {
   color: white;
   line-height: 16pt;
+  padding: 15px;
 }
 .welcome-text h1 {
   text-align: top;
@@ -34,6 +36,7 @@ p {
   color: #ffe555;
   text-transform: uppercase;
   font-size: 60px;
+  padding: 20px;
 }
 
 .welcome-text {
@@ -97,6 +100,7 @@ h2 {
   text-align: center;
   letter-spacing: 2px;
   line-height: 1.5;
+  top: 15px;
 }
 
 details {
