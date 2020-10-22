@@ -31,7 +31,7 @@ p {
 .welcome-text h1 {
   text-align: top;
   line-height: 50pt;
-  color: orangered;
+  color: #ffe555;
   text-transform: uppercase;
   font-size: 60px;
 }
