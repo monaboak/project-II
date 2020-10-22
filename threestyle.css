@@ -90,7 +90,7 @@ p {
 }
 
 summary {
-  color: white;
+  color: #ffe555;
 }
 
 h2 {
@@ -101,6 +101,8 @@ h2 {
   letter-spacing: 2px;
   line-height: 1.5;
   top: 15px;
+  position: relative;
+  color: #ffe555;
 }
 
 details {
@@ -160,7 +162,7 @@ summary::-webkit-details-marker {
 }
 
 .control-icon {
-  fill: orangered;
+  fill: #ffe555;
   transition: 0.3s ease;
   pointer-events: none;
 }
