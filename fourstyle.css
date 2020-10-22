@@ -87,10 +87,12 @@ body {
 
 p {
   color: white;
+  font-style: normal;
 }
 
 summary {
   color: #ffe555;
+  text style: italic; 
 }
 
 h2 {

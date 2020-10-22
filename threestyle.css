@@ -29,6 +29,7 @@ p {
   color: white;
   line-height: 16pt;
   padding: 15px;
+  font-style: normal;
 }
 .welcome-text h1 {
   text-align: top;

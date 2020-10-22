@@ -90,6 +90,7 @@ p {
 
 summary {
   color: #ffe555;
+  font-style: italic;
 }
 
 h2 {
@@ -102,7 +103,7 @@ h2 {
   top: 15px;
   position: relative;
   color: #ffe555;
-  padding: 20px;
+  padding: 25px;
 }
 
 details {
@@ -113,7 +114,7 @@ details {
   margin: 0 auto;
   position: relative;
   font-size: 22px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   box-sizing: border-box;
   transition: all 0.3s;
