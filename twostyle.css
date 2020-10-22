@@ -4,8 +4,9 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/onfireee.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/wildf.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 .wrapper {
@@ -30,7 +31,7 @@ p {
 .welcome-text h1 {
   text-align: top;
   line-height: 50pt;
-  color: white;
+  color: #ffe555;
   text-transform: uppercase;
   font-size: 60px;
 }
@@ -63,7 +64,6 @@ p {
   background: #fff;
   color: #333;
 }
-
 .logo img {
   max-width: 30%;
   max-height: 30%;
