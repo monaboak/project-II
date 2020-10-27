@@ -3,34 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ozone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--link to style.css-->
     <link rel="stylesheet" href="fourstyle.css" />
+    <script src="./js/navbar.js" defer></script>
   </head>
   <body>
     <header>
       <!--nav element goes here-->
-      <div class="wrapper">
-        <div class="logo">
+      <nav>
+        <a href="./">
           <img src="./images/companylogo.png" alt="logo" />
-        </div>
-        <ul class="nav-area">
+        </a>
+        <img
+          id="hamburger"
+          src="./images/menu.svg"
+          alt="Menu Icon"
+          onclick="toggleMenu()"
+        />
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="wildfires.html">Wild Fires</a></li>
           <li><a href="car-culture.html">Car Culture</a></li>
           <li><a href="ozone.html">Ozone</a></li>
           <li><a href="credits.html">Credits</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="welcome-text">
         <!--header section goes here-->
-
-        <h1>Ozone</h1>
+        <div>
+          <h1>Ozone</h1>
         <p>
           The Ozone layer is a colorless, unstable toxic gas that inhabits a
           portion of the Earth's atmostphere. It can be charachterized by its
           pungent odor and powerful oxidizing properties.
         </p>
-        <!--video-->
         <iframe
           width="560"
           height="315"
@@ -46,87 +53,93 @@
           Earum.
         </p>
       </div>
-    </header>
-    <!--FAQ-->
-    <h2>Frequently Asked Questions (FAQs)</h2>
+      </div>
+    
+      <div class="section-centered">
+      </header>
+      <!--FAQ-->
+      <h2>Frequently Asked Questions (FAQs)</h2>
+  
+      <div
+        style="visibility: hidden; position: absolute; width: 0px; height: 0px"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <symbol viewBox="0 0 24 24" id="expand-more">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </symbol>
+          <symbol viewBox="0 0 24 24" id="close">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </symbol>
+        </svg>
+      </div>
+  
+      <details>
+        <summary>
+          Why is smog dangerous?
+          <svg
+            class="control-icon control-icon-expand"
+            width="24"
+            height="24"
+            role="presentation"
+          >
+            <use
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="#expand-more"
+            />
+          </svg>
+          <svg
+            class="control-icon control-icon-close"
+            width="24"
+            height="24"
+            role="presentation"
+          >
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+          </svg>
+        </summary>
+        <p>
+          Smog is defined as a haze combined with smoke and other pollutants in
+          the atmosphere. Smog is considered to be dangerous because when inhaled,
+          it irritates living organisms’ airways and can increase our risk of
+          serious lung and heart diseases.
+        </p>
+      </details>
+  
+      <details>
+        <summary>
+          What contributes to the traffic in L.A.?
+          <svg
+            class="control-icon control-icon-expand"
+            width="24"
+            height="24"
+            role="presentation"
+          >
+            <use
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="#expand-more"
+            />
+          </svg>
+          <svg
+            class="control-icon control-icon-close"
+            width="24"
+            height="24"
+            role="presentation"
+          >
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+          </svg>
+        </summary>
+        <p>
+          Essentially, the main driving force of L.A.’s notorious traffic is poor
+          urban planning. The county’s population density is increasing, and the
+          space remains the same so it’s getting gradually more crowded over a
+          short amount of time.
+        </p>
+      </details>
+      </div>
 
-    <div
-      style="visibility: hidden; position: absolute; width: 0px; height: 0px"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <symbol viewBox="0 0 24 24" id="expand-more">
-          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </symbol>
-        <symbol viewBox="0 0 24 24" id="close">
-          <path
-            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-          />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </symbol>
-      </svg>
-    </div>
-
-    <details>
-      <summary>
-        Why is smog dangerous?
-        <svg
-          class="control-icon control-icon-expand"
-          width="24"
-          height="24"
-          role="presentation"
-        >
-          <use
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xlink:href="#expand-more"
-          />
-        </svg>
-        <svg
-          class="control-icon control-icon-close"
-          width="24"
-          height="24"
-          role="presentation"
-        >
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
-        </svg>
-      </summary>
-      <p>
-        Smog is defined as a haze combined with smoke and other pollutants in
-        the atmosphere. Smog is considered to be dangerous because when inhaled,
-        it irritates living organisms’ airways and can increase our risk of
-        serious lung and heart diseases.
-      </p>
-    </details>
-
-    <details>
-      <summary>
-        What contributes to the traffic in L.A.?
-        <svg
-          class="control-icon control-icon-expand"
-          width="24"
-          height="24"
-          role="presentation"
-        >
-          <use
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xlink:href="#expand-more"
-          />
-        </svg>
-        <svg
-          class="control-icon control-icon-close"
-          width="24"
-          height="24"
-          role="presentation"
-        >
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
-        </svg>
-      </summary>
-      <p>
-        Essentially, the main driving force of L.A.’s notorious traffic is poor
-        urban planning. The county’s population density is increasing, and the
-        space remains the same so it’s getting gradually more crowded over a
-        short amount of time.
-      </p>
-    </details>
+    
   </body>
 </html>
