@@ -85,12 +85,10 @@ iframe {
 }
 
 .welcome-text h1 {
-  text-align: top;
-  line-height: 50pt;
+  text-align: center;
   color: #ffe555;
   text-transform: uppercase;
   font-size: 60px;
-  padding: 20px;
 }
 
 /*FAQ section*/
