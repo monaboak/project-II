@@ -3,68 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <title>Los Angeles Air Pollution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/navbar.js" defer></script>
   </head>
   <body>
     <header>
       <!--nav element goes here-->
-      <div class="wrapper">
-        <div class="logo">
-          <img aligh="left" src="./images/companylogo.png" alt="logo" />
-        </div>
-        <ul class="nav-area">
+      <nav>
+        <a href="./">
+          <img src="./images/companylogo.png" alt="logo" />
+        </a>
+        <img
+          id="hamburger"
+          src="./images/menu.svg"
+          alt="Menu Icon"
+          onclick="toggleMenu()"
+        />
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="wildfires.html">Wild Fires</a></li>
           <li><a href="car-culture.html">Car Culture</a></li>
           <li><a href="ozone.html">Ozone</a></li>
           <li><a href="credits.html">Credits</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="welcome-text">
         <!--header section goes here-->
-        <h1>Los Angeles Air Pollution</h1>
-        <a href="#">Credits</a>
-        <img src="" alt="" />
+        <div>
+          <h1>Los Angeles Air Pollution</h1>
+          <a href="#">Credits</a>
+          <img src="" alt="" />
+        </div>
       </div>
     </header>
     <!--intro paragraph-->
-    <p>
-      Los Angeles, commonly referred to by the initials L.A., is a sprawling
-      Southern Californian city. Being the largest city in California, Los
-      Angeles has an estimated population of almost 4 million. Los Angles is
-      known world wide for being the entertainment capital of the world- it’s
-      the epicentre for film and television. The city is also known for its
-      notorious air quality. The dangerously poor air quality in Los Angeles has
-      been an ongoing issue for decades now. This site’s purpose is to bring
-      awareness to some of the major factors contributing to the air pollution
-      in L.A., as listed below:
-    </p>
+    <div class="section-centered">
+      <p>
+        Los Angeles, commonly referred to by the initials L.A., is a sprawling
+        Southern Californian city. Being the largest city in California, Los
+        Angeles has an estimated population of almost 4 million. Los Angles is
+        known world wide for being the entertainment capital of the world- it’s
+        the epicentre for film and television. The city is also known for its
+        notorious air quality. The dangerously poor air quality in Los Angeles
+        has been an ongoing issue for decades now. This site’s purpose is to
+        bring awareness to some of the major factors contributing to the air
+        pollution in L.A., as listed below:
+      </p>
+    </div>
     <!--wildfire intro -->
-    <h1>Wildfires</h1>
-    <p>
-      Los Angeles is suffers from natural forest fires. These fires go two ways-
-      they run their course and burn out within a matter of hours, or they take
-      on a life of their own and engulf dozens of cities in the Southern
-      Californian region.
-    </p>
-    <img src="./images/firepic.jpg" width="560" height="315" />
+    <div class="section-centered">
+      <h1>Wildfires</h1>
+      <p>
+        Los Angeles is suffers from natural forest fires. These fires go two
+        ways- they run their course and burn out within a matter of hours, or
+        they take on a life of their own and engulf dozens of cities in the
+        Southern Californian region.
+      </p>
+      <img src="./images/firepic.jpg" width="560px" height="315px" />
+    </div>
     <!--car culture intro-->
-    <h2>Car Culture</h2>
-    <p>
-      Los Angeles differs from other populous cities -like New York, for
-      example- in that it has a huge car culture. This crazed culture comes from
-      the fact that L.A. is a metropolitan area, and the county is about 4,700
-      miles wide.
-    </p>
-    <img src="./images/highway.jpg" />
+    <div class="section-centered">
+      <h1>Car Culture</h1>
+      <p>
+        Los Angeles differs from other populous cities -like New York, for
+        example- in that it has a huge car culture. This crazed culture comes
+        from the fact that L.A. is a metropolitan area, and the county is about
+        4,700 miles wide.
+      </p>
+      <img src="./images/highway.jpg" width="3000px" height="1999px" />
+    </div>
     <!--ozone intro-->
-    <h1>Ozone</h1>
-    <p>
-      The Los Angeles region is susceptible to high ozone layers. Ozone is
-      considered to be a reactive gas that is produced when the sun rays split
-      oxygen molecules.
-    </p>
-    <img src="./images/ozonec.jpg" />
+    <div class="section-centered">
+      <h1>Ozone</h1>
+      <p>
+        The Los Angeles region is susceptible to high ozone layers. Ozone is
+        considered to be a reactive gas that is produced when the sun rays split
+        oxygen molecules.
+      </p>
+      <img src="./images/ozonec.jpg" width="2048px" height="1429px" />
+    </div>
   </body>
 </html>
