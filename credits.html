@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Credits</title>
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
@@ -9,24 +10,46 @@
   <body>
     <header>
       <!--nav element goes here-->
-      <div class="wrapper">
-        <div class="logo">
+      <nav>
+        <a href="./">
           <img src="./images/companylogo.png" alt="logo" />
-        </div>
-        <ul class="nav-area">
+        </a>
+        <img
+          id="hamburger"
+          src="./images/menu.svg"
+          alt="Menu Icon"
+          onclick="toggleMenu()"
+        />
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="wildfires.html">Wildfires</a></li>
+          <li><a href="wildfires.html">Wild Fires</a></li>
           <li><a href="car-culture.html">Car Culture</a></li>
           <li><a href="ozone.html">Ozone</a></li>
           <li><a href="credits.html">Credits</a></li>
         </ul>
+      </nav>
+      <div class="credits">
+        <!--header section goes here-->
+        <h1>Credits</h1>
+        <ul>
+          <li>
+            <a
+              href="https://abc7.com/ozone-layer-arctic-coronavirus-air-quality/6135265/#:~:text=The%20five%2Dcounty%20Los%20Angeles,was%20depleted%2C%20the%20group%20said.&text=The%20ozone%20layer%20sits%20between%209%20and%2022%20miles%20above%20the%20Earth"
+            >
+              ABC
+            </a>
+          </li>
+          <li>
+            <a href="https://www.latimes.com/wildfires-map/">LAT</a>
+          </li>
+          <li>
+            <a
+              href="https://www.smithsonianmag.com/history/nobody-walks-in-la-the-rise-of-cars-and-the-monorails-that-never-were-43267593/"
+              >Smithsonian</a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="welcome-text">
-         <!--header section goes here-->
-         <h1>Credits</h1>
-         <li>https://abc7.com/ozone-layer-arctic-coronavirus-air-quality/6135265/#:~:text=The%20five%2Dcounty%20Los%20Angeles,was%20depleted%2C%20the%20group%20said.&text=The%20ozone%20layer%20sits%20between%209%20and%2022%20miles%20above%20the%20Earth.</li>
-         <li>https://www.latimes.com/wildfires-map/</li>
-         <li>https://www.smithsonianmag.com/history/nobody-walks-in-la-the-rise-of-cars-and-the-monorails-that-never-were-43267593/</li>
-    
+    </header>
   </body>
 </html>

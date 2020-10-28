@@ -225,3 +225,20 @@ nav a:visited {
     display: block;
   }
 }
+
+.credits {
+  padding: 20px;
+}
+
+.credits ul {
+  list-style-type: disc;
+  padding: 20px;
+}
+
+.credits a {
+  color: white;
+}
+
+.credits li {
+  padding: 5px 0;
+}
