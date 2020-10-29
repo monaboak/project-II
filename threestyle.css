@@ -309,3 +309,11 @@ nav a:visited {
     padding: 0 20px;
   }
 }
+
+.sixteen-by-nine {
+  position: relative;
+}
+
+.sixteen-by-nine > iframe {
+  position: absolute;
+}
